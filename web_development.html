@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+
+    <title>CKin</title>
+    </head>
+
+    <body>
+        <header>
+          <div id="mySidenav" class="sidenav">
+
+              <div class="logo"><a href="index.html"><img src="images/logo2.svg" alt="logo"></a></div>
+                <div id="navElements">
+                  <a class="navElements firstElement" href="web_development.html">WEB DEVELOPMENT</a>
+                  <a class="navElements" href="music.html">MUSIC</a>
+                  <a class="navElements" href="photography.html">PHOTOGRAPHY</a>
+
+
+                <div id="footer" class="footer">
+                    <a href="https://www.instagram.com/Ckin_music/">
+                        <img class="instagram" src="images/instagram.svg" alt="Instagram" width=" 43px">
+                    </a>
+                      <a href="https://ckin.itch.io/">
+                        <img class="itchio" src="images/itchio.svg" alt="itchio" width=" 50px">
+                    </a>
+                      <a href="https://soundcloud.com/coastalkindred">
+                        <img class="soundcloud" src="images/soundcloud.svg" alt="Soundcloud" width=" 50px">
+                    </a>
+                    </div>
+                </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+          </div>
+            <script>
+            function myFunction() {
+              var x = document.getElementById("navElements");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+       </header>
+
+       <div class="row_web">
+         <div class="column_web" style="width:70%">
+           <p>Pole Piece, final project for a web development course</p>
+           <a href="polePiece/checkout.html" class="checkout" ><img class="pole_piece_images" src="polePiece/images/checkout.png" alt="checkout"></a>
+           <a href="polePiece/payment-successful.html" class="payment"><img class="pole_piece_images" src="polePiece/images/payment.png" alt="payment_successful_image"></a>
+           <p>Pyro Pet</p>
+           <img class="pyro_pet_images web" src="pyroPet/images/web.png" alt="pyroPet_web_design">
+           <img class="pyro_pet_images artboard" src="pyroPet/images/artboard.png" alt="pyroPet_artboard">
+           <img class="pyro_pet_images artboard2" src="pyroPet/images/artboard2.png" alt="pyroPet_artboard2">
+
+         </div>
+         <div class="column_web" style="width:30%">
+           <p></p>
+           <img class="pole_piece_images layout" src="polePiece/images/layout.png" alt="layout_image" style="width:97.5%">
+           <img class="pole_piece_images mobile_layout" src="polePiece/images/mobile_layout.png" alt="mobile_layout_image" style="width:50%">
+           <p></p>
+           <img class="pyro_pet_images mobile" src="pyroPet/images/iphone.png" alt="pyroPet_mobile_design">
+         </div>
+
+         </div>
+
+       </div>
+
+
+
+
+    </body>
+
+</html>

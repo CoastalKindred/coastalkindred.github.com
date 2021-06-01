@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #e2e2e2;
+}
+
+.menubar {
+   background: #333; opacity: 0.8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: inherit;
+}
+
+/*search icon*/
+.nav-search{
+    background: url("images/iconsfinal-01.svg") no-repeat;
+    height: 30px;
+    margin: 50px 0px;
+}
+
+.nav-search:hover{
+    background: url("images/iconsfinal-03.svg") no-repeat;
+    height: 30px;
+    margin: 50px 0px;
+  }
+
+/*cart icon*/
+.nav-cart{
+    background: url("images/iconsfinal-02.svg") no-repeat;
+    height: 30px;
+    margin: 50px 0px;
+}
+
+.nav-cart:hover{
+    background: url("images/iconsfinal-04.svg") no-repeat;
+    height: 30px;
+    margin: 50px 0px;
+}
+
+
+
+/*logo icon*/
+.logo{
+    background: url("images/logo.svg") no-repeat;
+    height: 50px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.logo:hover{
+    background: url("images/logo-blue.svg") no-repeat;
+    height: 50px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+/*menu links*/
+.nav-products, .nav-about, .nav-signin{
+    height: 0px;
+    margin: 29px 0px;
+}
+
+.blanko{
+    flex: 1;
+}
+
+
+/* menu base styles */
+
+nav{
+    
+    max-width: 1240px;
+    margin: 0 auto;   
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: lato;
+    font-weight: bold;
+    font-size: 14px;  
+    letter-spacing: 1.05px;
+    
+    display: flex;
+    justify-content: center;  
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 30px 30px 20px 30px;
+}
+nav a:hover{
+    color: #0892D0;
+}
+
+
+/* flex styles */
+
+@media screen and (min-width: 768px){
+     nav ul{
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    
+    
+}
+
+/*
+@media screen and (max-width: 768px){
+     nav ul{
+        margin: 0px 334px;
+        }
+        
+   
+}
+*/

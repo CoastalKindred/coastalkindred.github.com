@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+
+    <title>CKin</title>
+    </head>
+
+    <body>
+        <header id="header">
+            <div id="mySidenav" class="sidenav">
+
+                <div class="logo"><a href="index.html"><img src="images/logo2.svg" alt="logo"></a></div>
+                  <div id="navElements">
+                    <a class="navElements firstElement" href="web_development.html">WEB DEVELOPMENT</a>
+                    <a class="navElements" href="music.html">MUSIC</a>
+                    <a class="navElements" href="photography.html">PHOTOGRAPHY</a>
+
+                  <div id="footer" class="footer">
+                      <a href="https://www.instagram.com/Ckin_music/">
+                          <img class="instagram" src="images/instagram.svg" alt="Instagram" width=" 43px">
+                      </a>
+                        <a href="https://ckin.itch.io/">
+                          <img class="itchio" src="images/itchio.svg" alt="itchio" width=" 50px">
+                      </a>
+                        <a href="https://soundcloud.com/coastalkindred">
+                          <img class="soundcloud" src="images/soundcloud.svg" alt="Soundcloud" width=" 50px">
+                      </a>
+                      </div>
+                  </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+
+
+
+
+            </div>
+
+
+
+            <div class="github_message"><p>Sorry! Files are too large for Github!</p></div>
+
+
+            <script>
+            function myFunction() {
+              var x = document.getElementById("navElements");
+              var y = document.getElementById("playerid");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+                y.style.top = "8rem";
+
+              } else {
+                x.style.display = "block";
+                y.style.top = "25rem";
+              }
+            }
+
+
+          </script>
+
+
+       </header>
+
+        <div class="player" id="playerid">
+
+
+      <audio id="player" ontimeupdate="updateProgress()">
+        <source id="source" />
+        Audio not supported
+      </audio>
+
+
+      <div id="controls">
+        <p id="currentSong"></p>
+        <div class="controls_wrapper">
+          <span onclick="playAudio()">&#9658;</span>
+          <span onclick="pauseAudio()">&#10074;&#10074;</span>
+        </div>
+        <!--<p>Volume:</p>
+        <div class="volume">
+          <span>- </span>
+          <input type="range" id="volumeSlider" min="0" max="1" step="0.01" />
+          <span> +</span>
+        </div>-->
+      </div>
+      <progress id="progress" value="0" max="100"></progress>
+
+      <div id="songList"></div>
+
+    </div>
+    <script src="script.js"></script>
+
+
+
+
+
+      <!--  <iframe class="player" width="100%" height="700" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1225688029%3Fsecret_token%3Ds-GzBCm9rFMTy&color=%23d4defa&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/coastalkindred" title="Coastal Kindred" target="_blank" style="color: #cccccc; text-decoration: none;">Coastal Kindred</a> · <a href="https://soundcloud.com/coastalkindred/sets/throughout" title="2015-2021" target="_blank" style="color: #cccccc; text-decoration: none;">2015-2021</a></div>-->
+
+
+    </body>
+
+
+
+
+
+
+</html>
